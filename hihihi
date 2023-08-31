@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clicker Game</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clicker Game</h1>
+    <p>Click the button to increase your score!</p>
+    <p>Score: <span id="score">0</span></p>
+    <button id="clickButton">Click Me!</button>
+
+    <script>
+        let score = 0;
+
+        const scoreDisplay = document.getElementById("score");
+        const clickButton = document.getElementById("clickButton");
+
+        clickButton.addEventListener("click", function () {
+            score++;
+            scoreDisplay.textContent = score;
+        });
+    </script>
+</body>
+</html>
